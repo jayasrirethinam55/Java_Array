@@ -1,0 +1,47 @@
+package String;
+
+public class Mininum_value {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int[] s = {3,4,9,7,1,8,5};
+
+int temp = 0;
+//System.out.println(s[i+1]);
+
+for(int i=0;i<s.length;i++)
+{
+	for(int j=i+1; j<s.length;j++)
+	{
+		if(s[i]<s[j])
+		{
+			temp=s[i];
+			s[i]=s[j];
+			s[j]=temp;
+		}
+	}
+}
+
+for(int k=0;k<s.length;k++)
+{
+	System.out.println(s[k]);
+}
+//s={9,8,7,5,4,3,1}
+System.out.println("Minimum value is "+ s[s.length-1]);
+                                        //s[6]
+
+}
+
+}
+
+
+Result:
+
+9
+8
+7
+5
+4
+3
+1
+Minimum value is 1
