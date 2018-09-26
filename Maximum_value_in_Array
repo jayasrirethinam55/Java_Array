@@ -1,0 +1,28 @@
+package String;
+
+public class Max_Value_{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] no= {4,3,5,8,1,2};
+		int max=0;
+		int i=0;
+		while(i<no.length)//0<5, 1<5,2<5.. 5<5
+		{
+			if(max<no[i]) //0<4, 4<3, 4<5,5<6, 6<1, 6<2
+			{
+				max=no[i];	//4	, 5, 6, 
+				
+			}
+			i++;
+		}
+		
+		System.out.println("Maximum value is "+ max);
+
+	}
+
+}
+
+
+Result:
+Maximum value is 8
